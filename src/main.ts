@@ -2,5 +2,13 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import "@/assets/styles/base.scss";
+import "@/assets/styles/iconfont.scss";
+import "vant/lib/index.css";
+import "@/mock/index";
 
-createApp(App).use(store).use(router).mount("#app");
+import { Tab, Tabs } from "vant";
+const app = createApp(App);
+app.use(Tab);
+app.use(Tabs);
+app.use(store).use(router).mount("#app");
