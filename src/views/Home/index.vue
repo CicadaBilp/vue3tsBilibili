@@ -5,9 +5,11 @@
   <AppHeader />
   <!-- 频道 -->
   <HomeChannel />
+  <HomeSwiper />
 </template>
 
 <script setup lang="ts">
 import AppHeader from "@/components/app-header.vue";
 import HomeChannel from "./components/home-channel.vue";
+import HomeSwiper from "./components/home-swipe.vue";
 </script>
